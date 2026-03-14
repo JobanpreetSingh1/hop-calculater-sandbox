@@ -1,0 +1,1549 @@
+[
+  {
+    "PRESSURE bar": 1,
+    "Saturation Temperature K": 373,
+    "hf (J/g)": 417,
+    "hfg (J/g)": 2257,
+    "hg (J/g)": 2674
+  },
+  {
+    "PRESSURE bar": 2,
+    "Saturation Temperature K": 394,
+    "hf (J/g)": 505,
+    "hfg (J/g)": 2201,
+    "hg (J/g)": 2706
+  },
+  {
+    "PRESSURE bar": 3,
+    "Saturation Temperature K": 407,
+    "hf (J/g)": 562,
+    "hfg (J/g)": 2163,
+    "hg (J/g)": 2725
+  },
+  {
+    "PRESSURE bar": 4,
+    "Saturation Temperature K": 417,
+    "hf (J/g)": 605,
+    "hfg (J/g)": 2133,
+    "hg (J/g)": 2738
+  },
+  {
+    "PRESSURE bar": 5,
+    "Saturation Temperature K": 425,
+    "hf (J/g)": 640,
+    "hfg (J/g)": 2108,
+    "hg (J/g)": 2748
+  },
+  {
+    "PRESSURE bar": 6,
+    "Saturation Temperature K": 432,
+    "hf (J/g)": 670,
+    "hfg (J/g)": 2085,
+    "hg (J/g)": 2756
+  },
+  {
+    "PRESSURE bar": 7,
+    "Saturation Temperature K": 438,
+    "hf (J/g)": 697,
+    "hfg (J/g)": 2066,
+    "hg (J/g)": 2762
+  },
+  {
+    "PRESSURE bar": 8,
+    "Saturation Temperature K": 444,
+    "hf (J/g)": 721,
+    "hfg (J/g)": 2047,
+    "hg (J/g)": 2768
+  },
+  {
+    "PRESSURE bar": 9,
+    "Saturation Temperature K": 449,
+    "hf (J/g)": 742,
+    "hfg (J/g)": 2030,
+    "hg (J/g)": 2773
+  },
+  {
+    "PRESSURE bar": 10,
+    "Saturation Temperature K": 453,
+    "hf (J/g)": 762,
+    "hfg (J/g)": 2014,
+    "hg (J/g)": 2777
+  },
+  {
+    "PRESSURE bar": 11,
+    "Saturation Temperature K": 457,
+    "hf (J/g)": 781,
+    "hfg (J/g)": 1999,
+    "hg (J/g)": 2780
+  },
+  {
+    "PRESSURE bar": 12,
+    "Saturation Temperature K": 461,
+    "hf (J/g)": 798,
+    "hfg (J/g)": 1985,
+    "hg (J/g)": 2783
+  },
+  {
+    "PRESSURE bar": 13,
+    "Saturation Temperature K": 465,
+    "hf (J/g)": 814,
+    "hfg (J/g)": 1972,
+    "hg (J/g)": 2786
+  },
+  {
+    "PRESSURE bar": 14,
+    "Saturation Temperature K": 468,
+    "hf (J/g)": 830,
+    "hfg (J/g)": 1959,
+    "hg (J/g)": 2788
+  },
+  {
+    "PRESSURE bar": 15,
+    "Saturation Temperature K": 471,
+    "hf (J/g)": 844,
+    "hfg (J/g)": 1946,
+    "hg (J/g)": 2790
+  },
+  {
+    "PRESSURE bar": 16,
+    "Saturation Temperature K": 475,
+    "hf (J/g)": 858,
+    "hfg (J/g)": 1934,
+    "hg (J/g)": 2792
+  },
+  {
+    "PRESSURE bar": 17,
+    "Saturation Temperature K": 477,
+    "hf (J/g)": 871,
+    "hfg (J/g)": 1923,
+    "hg (J/g)": 2794
+  },
+  {
+    "PRESSURE bar": 18,
+    "Saturation Temperature K": 480,
+    "hf (J/g)": 884,
+    "hfg (J/g)": 1911,
+    "hg (J/g)": 2795
+  },
+  {
+    "PRESSURE bar": 19,
+    "Saturation Temperature K": 483,
+    "hf (J/g)": 896,
+    "hfg (J/g)": 1900,
+    "hg (J/g)": 2797
+  },
+  {
+    "PRESSURE bar": 20,
+    "Saturation Temperature K": 486,
+    "hf (J/g)": 908,
+    "hfg (J/g)": 1890,
+    "hg (J/g)": 2798
+  },
+  {
+    "PRESSURE bar": 21,
+    "Saturation Temperature K": 488,
+    "hf (J/g)": 920,
+    "hfg (J/g)": 1879,
+    "hg (J/g)": 2799
+  },
+  {
+    "PRESSURE bar": 22,
+    "Saturation Temperature K": 490,
+    "hf (J/g)": 931,
+    "hfg (J/g)": 1869,
+    "hg (J/g)": 2800
+  },
+  {
+    "PRESSURE bar": 23,
+    "Saturation Temperature K": 493,
+    "hf (J/g)": 941,
+    "hfg (J/g)": 1859,
+    "hg (J/g)": 2800
+  },
+  {
+    "PRESSURE bar": 24,
+    "Saturation Temperature K": 495,
+    "hf (J/g)": 951,
+    "hfg (J/g)": 1849,
+    "hg (J/g)": 2801
+  },
+  {
+    "PRESSURE bar": 25,
+    "Saturation Temperature K": 497,
+    "hf (J/g)": 962,
+    "hfg (J/g)": 1840,
+    "hg (J/g)": 2801
+  },
+  {
+    "PRESSURE bar": 26,
+    "Saturation Temperature K": 499,
+    "hf (J/g)": 971,
+    "hfg (J/g)": 1831,
+    "hg (J/g)": 2802
+  },
+  {
+    "PRESSURE bar": 27,
+    "Saturation Temperature K": 501,
+    "hf (J/g)": 981,
+    "hfg (J/g)": 1821,
+    "hg (J/g)": 2802
+  },
+  {
+    "PRESSURE bar": 28,
+    "Saturation Temperature K": 503,
+    "hf (J/g)": 990,
+    "hfg (J/g)": 1812,
+    "hg (J/g)": 2802
+  },
+  {
+    "PRESSURE bar": 29,
+    "Saturation Temperature K": 505,
+    "hf (J/g)": 999,
+    "hfg (J/g)": 1803,
+    "hg (J/g)": 2803
+  },
+  {
+    "PRESSURE bar": 30,
+    "Saturation Temperature K": 507,
+    "hf (J/g)": 1008,
+    "hfg (J/g)": 1795,
+    "hg (J/g)": 2803
+  },
+  {
+    "PRESSURE bar": 31,
+    "Saturation Temperature K": 509,
+    "hf (J/g)": 1017,
+    "hfg (J/g)": 1786,
+    "hg (J/g)": 2803
+  },
+  {
+    "PRESSURE bar": 32,
+    "Saturation Temperature K": 511,
+    "hf (J/g)": 1025,
+    "hfg (J/g)": 1778,
+    "hg (J/g)": 2803
+  },
+  {
+    "PRESSURE bar": 33,
+    "Saturation Temperature K": 512,
+    "hf (J/g)": 1033,
+    "hfg (J/g)": 1769,
+    "hg (J/g)": 2803
+  },
+  {
+    "PRESSURE bar": 34,
+    "Saturation Temperature K": 514,
+    "hf (J/g)": 1041,
+    "hfg (J/g)": 1761,
+    "hg (J/g)": 2802
+  },
+  {
+    "PRESSURE bar": 35,
+    "Saturation Temperature K": 516,
+    "hf (J/g)": 1049,
+    "hfg (J/g)": 1753,
+    "hg (J/g)": 2802
+  },
+  {
+    "PRESSURE bar": 36,
+    "Saturation Temperature K": 517,
+    "hf (J/g)": 1057,
+    "hfg (J/g)": 1745,
+    "hg (J/g)": 2802
+  },
+  {
+    "PRESSURE bar": 37,
+    "Saturation Temperature K": 519,
+    "hf (J/g)": 1065,
+    "hfg (J/g)": 1737,
+    "hg (J/g)": 2802
+  },
+  {
+    "PRESSURE bar": 38,
+    "Saturation Temperature K": 521,
+    "hf (J/g)": 1072,
+    "hfg (J/g)": 1729,
+    "hg (J/g)": 2801
+  },
+  {
+    "PRESSURE bar": 39,
+    "Saturation Temperature K": 522,
+    "hf (J/g)": 1080,
+    "hfg (J/g)": 1721,
+    "hg (J/g)": 2801
+  },
+  {
+    "PRESSURE bar": 40,
+    "Saturation Temperature K": 524,
+    "hf (J/g)": 1087,
+    "hfg (J/g)": 1713,
+    "hg (J/g)": 2800
+  },
+  {
+    "PRESSURE bar": 41,
+    "Saturation Temperature K": 525,
+    "hf (J/g)": 1094,
+    "hfg (J/g)": 1706,
+    "hg (J/g)": 2800
+  },
+  {
+    "PRESSURE bar": 42,
+    "Saturation Temperature K": 526,
+    "hf (J/g)": 1101,
+    "hfg (J/g)": 1698,
+    "hg (J/g)": 2799
+  },
+  {
+    "PRESSURE bar": 43,
+    "Saturation Temperature K": 528,
+    "hf (J/g)": 1108,
+    "hfg (J/g)": 1690,
+    "hg (J/g)": 2799
+  },
+  {
+    "PRESSURE bar": 44,
+    "Saturation Temperature K": 529,
+    "hf (J/g)": 1115,
+    "hfg (J/g)": 1683,
+    "hg (J/g)": 2798
+  },
+  {
+    "PRESSURE bar": 45,
+    "Saturation Temperature K": 531,
+    "hf (J/g)": 1122,
+    "hfg (J/g)": 1676,
+    "hg (J/g)": 2797
+  },
+  {
+    "PRESSURE bar": 46,
+    "Saturation Temperature K": 532,
+    "hf (J/g)": 1128,
+    "hfg (J/g)": 1668,
+    "hg (J/g)": 2797
+  },
+  {
+    "PRESSURE bar": 47,
+    "Saturation Temperature K": 533,
+    "hf (J/g)": 1135,
+    "hfg (J/g)": 1661,
+    "hg (J/g)": 2796
+  },
+  {
+    "PRESSURE bar": 48,
+    "Saturation Temperature K": 535,
+    "hf (J/g)": 1142,
+    "hfg (J/g)": 1654,
+    "hg (J/g)": 2795
+  },
+  {
+    "PRESSURE bar": 49,
+    "Saturation Temperature K": 536,
+    "hf (J/g)": 1148,
+    "hfg (J/g)": 1647,
+    "hg (J/g)": 2794
+  },
+  {
+    "PRESSURE bar": 50,
+    "Saturation Temperature K": 537,
+    "hf (J/g)": 1154,
+    "hfg (J/g)": 1639,
+    "hg (J/g)": 2794
+  },
+  {
+    "PRESSURE bar": 51,
+    "Saturation Temperature K": 538,
+    "hf (J/g)": 1160,
+    "hfg (J/g)": 1632,
+    "hg (J/g)": 2793
+  },
+  {
+    "PRESSURE bar": 52,
+    "Saturation Temperature K": 540,
+    "hf (J/g)": 1167,
+    "hfg (J/g)": 1625,
+    "hg (J/g)": 2792
+  },
+  {
+    "PRESSURE bar": 53,
+    "Saturation Temperature K": 541,
+    "hf (J/g)": 1173,
+    "hfg (J/g)": 1618,
+    "hg (J/g)": 2791
+  },
+  {
+    "PRESSURE bar": 54,
+    "Saturation Temperature K": 542,
+    "hf (J/g)": 1179,
+    "hfg (J/g)": 1611,
+    "hg (J/g)": 2790
+  },
+  {
+    "PRESSURE bar": 55,
+    "Saturation Temperature K": 543,
+    "hf (J/g)": 1185,
+    "hfg (J/g)": 1605,
+    "hg (J/g)": 2789
+  },
+  {
+    "PRESSURE bar": 56,
+    "Saturation Temperature K": 544,
+    "hf (J/g)": 1191,
+    "hfg (J/g)": 1598,
+    "hg (J/g)": 2788
+  },
+  {
+    "PRESSURE bar": 57,
+    "Saturation Temperature K": 545,
+    "hf (J/g)": 1196,
+    "hfg (J/g)": 1591,
+    "hg (J/g)": 2787
+  },
+  {
+    "PRESSURE bar": 58,
+    "Saturation Temperature K": 547,
+    "hf (J/g)": 1202,
+    "hfg (J/g)": 1584,
+    "hg (J/g)": 2786
+  },
+  {
+    "PRESSURE bar": 59,
+    "Saturation Temperature K": 548,
+    "hf (J/g)": 1208,
+    "hfg (J/g)": 1577,
+    "hg (J/g)": 2785
+  },
+  {
+    "PRESSURE bar": 60,
+    "Saturation Temperature K": 549,
+    "hf (J/g)": 1213,
+    "hfg (J/g)": 1571,
+    "hg (J/g)": 2784
+  },
+  {
+    "PRESSURE bar": 61,
+    "Saturation Temperature K": 550,
+    "hf (J/g)": 1219,
+    "hfg (J/g)": 1564,
+    "hg (J/g)": 2783
+  },
+  {
+    "PRESSURE bar": 62,
+    "Saturation Temperature K": 551,
+    "hf (J/g)": 1225,
+    "hfg (J/g)": 1557,
+    "hg (J/g)": 2782
+  },
+  {
+    "PRESSURE bar": 63,
+    "Saturation Temperature K": 552,
+    "hf (J/g)": 1230,
+    "hfg (J/g)": 1551,
+    "hg (J/g)": 2781
+  },
+  {
+    "PRESSURE bar": 64,
+    "Saturation Temperature K": 553,
+    "hf (J/g)": 1236,
+    "hfg (J/g)": 1544,
+    "hg (J/g)": 2780
+  },
+  {
+    "PRESSURE bar": 65,
+    "Saturation Temperature K": 554,
+    "hf (J/g)": 1241,
+    "hfg (J/g)": 1537,
+    "hg (J/g)": 2778
+  },
+  {
+    "PRESSURE bar": 66,
+    "Saturation Temperature K": 555,
+    "hf (J/g)": 1246,
+    "hfg (J/g)": 1531,
+    "hg (J/g)": 2777
+  },
+  {
+    "PRESSURE bar": 67,
+    "Saturation Temperature K": 556,
+    "hf (J/g)": 1252,
+    "hfg (J/g)": 1524,
+    "hg (J/g)": 2776
+  },
+  {
+    "PRESSURE bar": 68,
+    "Saturation Temperature K": 557,
+    "hf (J/g)": 1257,
+    "hfg (J/g)": 1518,
+    "hg (J/g)": 2775
+  },
+  {
+    "PRESSURE bar": 69,
+    "Saturation Temperature K": 558,
+    "hf (J/g)": 1262,
+    "hfg (J/g)": 1511,
+    "hg (J/g)": 2773
+  },
+  {
+    "PRESSURE bar": 70,
+    "Saturation Temperature K": 559,
+    "hf (J/g)": 1267,
+    "hfg (J/g)": 1505,
+    "hg (J/g)": 2772
+  },
+  {
+    "PRESSURE bar": 71,
+    "Saturation Temperature K": 560,
+    "hf (J/g)": 1272,
+    "hfg (J/g)": 1498,
+    "hg (J/g)": 2771
+  },
+  {
+    "PRESSURE bar": 72,
+    "Saturation Temperature K": 561,
+    "hf (J/g)": 1277,
+    "hfg (J/g)": 1492,
+    "hg (J/g)": 2769
+  },
+  {
+    "PRESSURE bar": 73,
+    "Saturation Temperature K": 562,
+    "hf (J/g)": 1282,
+    "hfg (J/g)": 1486,
+    "hg (J/g)": 2768
+  },
+  {
+    "PRESSURE bar": 74,
+    "Saturation Temperature K": 563,
+    "hf (J/g)": 1288,
+    "hfg (J/g)": 1479,
+    "hg (J/g)": 2767
+  },
+  {
+    "PRESSURE bar": 75,
+    "Saturation Temperature K": 564,
+    "hf (J/g)": 1292,
+    "hfg (J/g)": 1473,
+    "hg (J/g)": 2765
+  },
+  {
+    "PRESSURE bar": 76,
+    "Saturation Temperature K": 565,
+    "hf (J/g)": 1297,
+    "hfg (J/g)": 1467,
+    "hg (J/g)": 2764
+  },
+  {
+    "PRESSURE bar": 77,
+    "Saturation Temperature K": 566,
+    "hf (J/g)": 1302,
+    "hfg (J/g)": 1460,
+    "hg (J/g)": 2763
+  },
+  {
+    "PRESSURE bar": 78,
+    "Saturation Temperature K": 566,
+    "hf (J/g)": 1307,
+    "hfg (J/g)": 1454,
+    "hg (J/g)": 2761
+  },
+  {
+    "PRESSURE bar": 79,
+    "Saturation Temperature K": 567,
+    "hf (J/g)": 1312,
+    "hfg (J/g)": 1448,
+    "hg (J/g)": 2760
+  },
+  {
+    "PRESSURE bar": 80,
+    "Saturation Temperature K": 568,
+    "hf (J/g)": 1317,
+    "hfg (J/g)": 1441,
+    "hg (J/g)": 2758
+  },
+  {
+    "PRESSURE bar": 81,
+    "Saturation Temperature K": 569,
+    "hf (J/g)": 1322,
+    "hfg (J/g)": 1435,
+    "hg (J/g)": 2757
+  },
+  {
+    "PRESSURE bar": 82,
+    "Saturation Temperature K": 570,
+    "hf (J/g)": 1326,
+    "hfg (J/g)": 1429,
+    "hg (J/g)": 2755
+  },
+  {
+    "PRESSURE bar": 83,
+    "Saturation Temperature K": 571,
+    "hf (J/g)": 1331,
+    "hfg (J/g)": 1422,
+    "hg (J/g)": 2754
+  },
+  {
+    "PRESSURE bar": 84,
+    "Saturation Temperature K": 572,
+    "hf (J/g)": 1336,
+    "hfg (J/g)": 1416,
+    "hg (J/g)": 2752
+  },
+  {
+    "PRESSURE bar": 85,
+    "Saturation Temperature K": 572,
+    "hf (J/g)": 1340,
+    "hfg (J/g)": 1410,
+    "hg (J/g)": 2751
+  },
+  {
+    "PRESSURE bar": 86,
+    "Saturation Temperature K": 573,
+    "hf (J/g)": 1345,
+    "hfg (J/g)": 1404,
+    "hg (J/g)": 2749
+  },
+  {
+    "PRESSURE bar": 87,
+    "Saturation Temperature K": 574,
+    "hf (J/g)": 1350,
+    "hfg (J/g)": 1398,
+    "hg (J/g)": 2747
+  },
+  {
+    "PRESSURE bar": 88,
+    "Saturation Temperature K": 575,
+    "hf (J/g)": 1354,
+    "hfg (J/g)": 1391,
+    "hg (J/g)": 2746
+  },
+  {
+    "PRESSURE bar": 89,
+    "Saturation Temperature K": 576,
+    "hf (J/g)": 1359,
+    "hfg (J/g)": 1385,
+    "hg (J/g)": 2744
+  },
+  {
+    "PRESSURE bar": 90,
+    "Saturation Temperature K": 577,
+    "hf (J/g)": 1363,
+    "hfg (J/g)": 1379,
+    "hg (J/g)": 2742
+  },
+  {
+    "PRESSURE bar": 91,
+    "Saturation Temperature K": 577,
+    "hf (J/g)": 1368,
+    "hfg (J/g)": 1373,
+    "hg (J/g)": 2741
+  },
+  {
+    "PRESSURE bar": 92,
+    "Saturation Temperature K": 578,
+    "hf (J/g)": 1372,
+    "hfg (J/g)": 1367,
+    "hg (J/g)": 2739
+  },
+  {
+    "PRESSURE bar": 93,
+    "Saturation Temperature K": 579,
+    "hf (J/g)": 1377,
+    "hfg (J/g)": 1360,
+    "hg (J/g)": 2737
+  },
+  {
+    "PRESSURE bar": 94,
+    "Saturation Temperature K": 580,
+    "hf (J/g)": 1381,
+    "hfg (J/g)": 1354,
+    "hg (J/g)": 2736
+  },
+  {
+    "PRESSURE bar": 95,
+    "Saturation Temperature K": 580,
+    "hf (J/g)": 1386,
+    "hfg (J/g)": 1348,
+    "hg (J/g)": 2734
+  },
+  {
+    "PRESSURE bar": 96,
+    "Saturation Temperature K": 581,
+    "hf (J/g)": 1390,
+    "hfg (J/g)": 1342,
+    "hg (J/g)": 2732
+  },
+  {
+    "PRESSURE bar": 97,
+    "Saturation Temperature K": 582,
+    "hf (J/g)": 1395,
+    "hfg (J/g)": 1336,
+    "hg (J/g)": 2730
+  },
+  {
+    "PRESSURE bar": 98,
+    "Saturation Temperature K": 583,
+    "hf (J/g)": 1399,
+    "hfg (J/g)": 1330,
+    "hg (J/g)": 2729
+  },
+  {
+    "PRESSURE bar": 99,
+    "Saturation Temperature K": 583,
+    "hf (J/g)": 1403,
+    "hfg (J/g)": 1324,
+    "hg (J/g)": 2727
+  },
+  {
+    "PRESSURE bar": 100,
+    "Saturation Temperature K": 584,
+    "hf (J/g)": 1408,
+    "hfg (J/g)": 1317,
+    "hg (J/g)": 2725
+  },
+  {
+    "PRESSURE bar": 101,
+    "Saturation Temperature K": 585,
+    "hf (J/g)": 1412,
+    "hfg (J/g)": 1311,
+    "hg (J/g)": 2723
+  },
+  {
+    "PRESSURE bar": 102,
+    "Saturation Temperature K": 586,
+    "hf (J/g)": 1416,
+    "hfg (J/g)": 1305,
+    "hg (J/g)": 2721
+  },
+  {
+    "PRESSURE bar": 103,
+    "Saturation Temperature K": 586,
+    "hf (J/g)": 1420,
+    "hfg (J/g)": 1299,
+    "hg (J/g)": 2719
+  },
+  {
+    "PRESSURE bar": 104,
+    "Saturation Temperature K": 587,
+    "hf (J/g)": 1425,
+    "hfg (J/g)": 1293,
+    "hg (J/g)": 2718
+  },
+  {
+    "PRESSURE bar": 105,
+    "Saturation Temperature K": 588,
+    "hf (J/g)": 1429,
+    "hfg (J/g)": 1287,
+    "hg (J/g)": 2716
+  },
+  {
+    "PRESSURE bar": 106,
+    "Saturation Temperature K": 588,
+    "hf (J/g)": 1433,
+    "hfg (J/g)": 1280,
+    "hg (J/g)": 2714
+  },
+  {
+    "PRESSURE bar": 107,
+    "Saturation Temperature K": 589,
+    "hf (J/g)": 1437,
+    "hfg (J/g)": 1274,
+    "hg (J/g)": 2712
+  },
+  {
+    "PRESSURE bar": 108,
+    "Saturation Temperature K": 590,
+    "hf (J/g)": 1442,
+    "hfg (J/g)": 1268,
+    "hg (J/g)": 2710
+  },
+  {
+    "PRESSURE bar": 109,
+    "Saturation Temperature K": 591,
+    "hf (J/g)": 1446,
+    "hfg (J/g)": 1262,
+    "hg (J/g)": 2708
+  },
+  {
+    "PRESSURE bar": 110,
+    "Saturation Temperature K": 591,
+    "hf (J/g)": 1450,
+    "hfg (J/g)": 1256,
+    "hg (J/g)": 2706
+  },
+  {
+    "PRESSURE bar": 111,
+    "Saturation Temperature K": 592,
+    "hf (J/g)": 1454,
+    "hfg (J/g)": 1250,
+    "hg (J/g)": 2704
+  },
+  {
+    "PRESSURE bar": 112,
+    "Saturation Temperature K": 593,
+    "hf (J/g)": 1458,
+    "hfg (J/g)": 1243,
+    "hg (J/g)": 2702
+  },
+  {
+    "PRESSURE bar": 113,
+    "Saturation Temperature K": 593,
+    "hf (J/g)": 1462,
+    "hfg (J/g)": 1237,
+    "hg (J/g)": 2700
+  },
+  {
+    "PRESSURE bar": 114,
+    "Saturation Temperature K": 594,
+    "hf (J/g)": 1467,
+    "hfg (J/g)": 1231,
+    "hg (J/g)": 2698
+  },
+  {
+    "PRESSURE bar": 115,
+    "Saturation Temperature K": 595,
+    "hf (J/g)": 1471,
+    "hfg (J/g)": 1225,
+    "hg (J/g)": 2696
+  },
+  {
+    "PRESSURE bar": 116,
+    "Saturation Temperature K": 595,
+    "hf (J/g)": 1475,
+    "hfg (J/g)": 1219,
+    "hg (J/g)": 2693
+  },
+  {
+    "PRESSURE bar": 117,
+    "Saturation Temperature K": 596,
+    "hf (J/g)": 1479,
+    "hfg (J/g)": 1213,
+    "hg (J/g)": 2691
+  },
+  {
+    "PRESSURE bar": 118,
+    "Saturation Temperature K": 597,
+    "hf (J/g)": 1483,
+    "hfg (J/g)": 1206,
+    "hg (J/g)": 2689
+  },
+  {
+    "PRESSURE bar": 119,
+    "Saturation Temperature K": 597,
+    "hf (J/g)": 1487,
+    "hfg (J/g)": 1200,
+    "hg (J/g)": 2687
+  },
+  {
+    "PRESSURE bar": 120,
+    "Saturation Temperature K": 598,
+    "hf (J/g)": 1491,
+    "hfg (J/g)": 1194,
+    "hg (J/g)": 2685
+  },
+  {
+    "PRESSURE bar": 121,
+    "Saturation Temperature K": 598,
+    "hf (J/g)": 1495,
+    "hfg (J/g)": 1188,
+    "hg (J/g)": 2683
+  },
+  {
+    "PRESSURE bar": 122,
+    "Saturation Temperature K": 599,
+    "hf (J/g)": 1499,
+    "hfg (J/g)": 1181,
+    "hg (J/g)": 2681
+  },
+  {
+    "PRESSURE bar": 123,
+    "Saturation Temperature K": 600,
+    "hf (J/g)": 1503,
+    "hfg (J/g)": 1175,
+    "hg (J/g)": 2678
+  },
+  {
+    "PRESSURE bar": 124,
+    "Saturation Temperature K": 600,
+    "hf (J/g)": 1507,
+    "hfg (J/g)": 1169,
+    "hg (J/g)": 2676
+  },
+  {
+    "PRESSURE bar": 125,
+    "Saturation Temperature K": 601,
+    "hf (J/g)": 1511,
+    "hfg (J/g)": 1163,
+    "hg (J/g)": 2674
+  },
+  {
+    "PRESSURE bar": 126,
+    "Saturation Temperature K": 602,
+    "hf (J/g)": 1515,
+    "hfg (J/g)": 1156,
+    "hg (J/g)": 2671
+  },
+  {
+    "PRESSURE bar": 127,
+    "Saturation Temperature K": 602,
+    "hf (J/g)": 1519,
+    "hfg (J/g)": 1150,
+    "hg (J/g)": 2669
+  },
+  {
+    "PRESSURE bar": 128,
+    "Saturation Temperature K": 603,
+    "hf (J/g)": 1523,
+    "hfg (J/g)": 1144,
+    "hg (J/g)": 2667
+  },
+  {
+    "PRESSURE bar": 129,
+    "Saturation Temperature K": 603,
+    "hf (J/g)": 1527,
+    "hfg (J/g)": 1137,
+    "hg (J/g)": 2665
+  },
+  {
+    "PRESSURE bar": 130,
+    "Saturation Temperature K": 604,
+    "hf (J/g)": 1531,
+    "hfg (J/g)": 1131,
+    "hg (J/g)": 2662
+  },
+  {
+    "PRESSURE bar": 131,
+    "Saturation Temperature K": 605,
+    "hf (J/g)": 1535,
+    "hfg (J/g)": 1125,
+    "hg (J/g)": 2660
+  },
+  {
+    "PRESSURE bar": 132,
+    "Saturation Temperature K": 605,
+    "hf (J/g)": 1539,
+    "hfg (J/g)": 1118,
+    "hg (J/g)": 2657
+  },
+  {
+    "PRESSURE bar": 133,
+    "Saturation Temperature K": 606,
+    "hf (J/g)": 1543,
+    "hfg (J/g)": 1112,
+    "hg (J/g)": 2655
+  },
+  {
+    "PRESSURE bar": 134,
+    "Saturation Temperature K": 606,
+    "hf (J/g)": 1547,
+    "hfg (J/g)": 1106,
+    "hg (J/g)": 2652
+  },
+  {
+    "PRESSURE bar": 135,
+    "Saturation Temperature K": 607,
+    "hf (J/g)": 1551,
+    "hfg (J/g)": 1099,
+    "hg (J/g)": 2650
+  },
+  {
+    "PRESSURE bar": 136,
+    "Saturation Temperature K": 608,
+    "hf (J/g)": 1555,
+    "hfg (J/g)": 1093,
+    "hg (J/g)": 2648
+  },
+  {
+    "PRESSURE bar": 137,
+    "Saturation Temperature K": 608,
+    "hf (J/g)": 1559,
+    "hfg (J/g)": 1086,
+    "hg (J/g)": 2645
+  },
+  {
+    "PRESSURE bar": 138,
+    "Saturation Temperature K": 609,
+    "hf (J/g)": 1563,
+    "hfg (J/g)": 1080,
+    "hg (J/g)": 2642
+  },
+  {
+    "PRESSURE bar": 139,
+    "Saturation Temperature K": 609,
+    "hf (J/g)": 1567,
+    "hfg (J/g)": 1073,
+    "hg (J/g)": 2640
+  },
+  {
+    "PRESSURE bar": 140,
+    "Saturation Temperature K": 610,
+    "hf (J/g)": 1571,
+    "hfg (J/g)": 1067,
+    "hg (J/g)": 2637
+  },
+  {
+    "PRESSURE bar": 141,
+    "Saturation Temperature K": 610,
+    "hf (J/g)": 1574,
+    "hfg (J/g)": 1060,
+    "hg (J/g)": 2635
+  },
+  {
+    "PRESSURE bar": 142,
+    "Saturation Temperature K": 611,
+    "hf (J/g)": 1578,
+    "hfg (J/g)": 1054,
+    "hg (J/g)": 2632
+  },
+  {
+    "PRESSURE bar": 143,
+    "Saturation Temperature K": 612,
+    "hf (J/g)": 1582,
+    "hfg (J/g)": 1047,
+    "hg (J/g)": 2629
+  },
+  {
+    "PRESSURE bar": 144,
+    "Saturation Temperature K": 612,
+    "hf (J/g)": 1586,
+    "hfg (J/g)": 1041,
+    "hg (J/g)": 2627
+  },
+  {
+    "PRESSURE bar": 145,
+    "Saturation Temperature K": 613,
+    "hf (J/g)": 1590,
+    "hfg (J/g)": 1034,
+    "hg (J/g)": 2624
+  },
+  {
+    "PRESSURE bar": 146,
+    "Saturation Temperature K": 613,
+    "hf (J/g)": 1594,
+    "hfg (J/g)": 1027,
+    "hg (J/g)": 2621
+  },
+  {
+    "PRESSURE bar": 147,
+    "Saturation Temperature K": 614,
+    "hf (J/g)": 1598,
+    "hfg (J/g)": 1021,
+    "hg (J/g)": 2619
+  },
+  {
+    "PRESSURE bar": 148,
+    "Saturation Temperature K": 614,
+    "hf (J/g)": 1602,
+    "hfg (J/g)": 1014,
+    "hg (J/g)": 2616
+  },
+  {
+    "PRESSURE bar": 149,
+    "Saturation Temperature K": 615,
+    "hf (J/g)": 1606,
+    "hfg (J/g)": 1007,
+    "hg (J/g)": 2613
+  },
+  {
+    "PRESSURE bar": 150,
+    "Saturation Temperature K": 615,
+    "hf (J/g)": 1610,
+    "hfg (J/g)": 1000,
+    "hg (J/g)": 2610
+  },
+  {
+    "PRESSURE bar": 151,
+    "Saturation Temperature K": 616,
+    "hf (J/g)": 1614,
+    "hfg (J/g)": 994,
+    "hg (J/g)": 2607
+  },
+  {
+    "PRESSURE bar": 152,
+    "Saturation Temperature K": 616,
+    "hf (J/g)": 1618,
+    "hfg (J/g)": 987,
+    "hg (J/g)": 2604
+  },
+  {
+    "PRESSURE bar": 153,
+    "Saturation Temperature K": 617,
+    "hf (J/g)": 1622,
+    "hfg (J/g)": 980,
+    "hg (J/g)": 2601
+  },
+  {
+    "PRESSURE bar": 154,
+    "Saturation Temperature K": 617,
+    "hf (J/g)": 1625,
+    "hfg (J/g)": 973,
+    "hg (J/g)": 2599
+  },
+  {
+    "PRESSURE bar": 155,
+    "Saturation Temperature K": 618,
+    "hf (J/g)": 1629,
+    "hfg (J/g)": 966,
+    "hg (J/g)": 2596
+  },
+  {
+    "PRESSURE bar": 156,
+    "Saturation Temperature K": 618,
+    "hf (J/g)": 1633,
+    "hfg (J/g)": 959,
+    "hg (J/g)": 2593
+  },
+  {
+    "PRESSURE bar": 157,
+    "Saturation Temperature K": 619,
+    "hf (J/g)": 1637,
+    "hfg (J/g)": 952,
+    "hg (J/g)": 2590
+  },
+  {
+    "PRESSURE bar": 158,
+    "Saturation Temperature K": 619,
+    "hf (J/g)": 1641,
+    "hfg (J/g)": 945,
+    "hg (J/g)": 2586
+  },
+  {
+    "PRESSURE bar": 159,
+    "Saturation Temperature K": 620,
+    "hf (J/g)": 1645,
+    "hfg (J/g)": 938,
+    "hg (J/g)": 2583
+  },
+  {
+    "PRESSURE bar": 160,
+    "Saturation Temperature K": 621,
+    "hf (J/g)": 1649,
+    "hfg (J/g)": 931,
+    "hg (J/g)": 2580
+  },
+  {
+    "PRESSURE bar": 161,
+    "Saturation Temperature K": 621,
+    "hf (J/g)": 1653,
+    "hfg (J/g)": 924,
+    "hg (J/g)": 2577
+  },
+  {
+    "PRESSURE bar": 162,
+    "Saturation Temperature K": 622,
+    "hf (J/g)": 1657,
+    "hfg (J/g)": 917,
+    "hg (J/g)": 2574
+  },
+  {
+    "PRESSURE bar": 163,
+    "Saturation Temperature K": 622,
+    "hf (J/g)": 1661,
+    "hfg (J/g)": 909,
+    "hg (J/g)": 2571
+  },
+  {
+    "PRESSURE bar": 164,
+    "Saturation Temperature K": 623,
+    "hf (J/g)": 1665,
+    "hfg (J/g)": 902,
+    "hg (J/g)": 2567
+  },
+  {
+    "PRESSURE bar": 165,
+    "Saturation Temperature K": 623,
+    "hf (J/g)": 1669,
+    "hfg (J/g)": 895,
+    "hg (J/g)": 2564
+  },
+  {
+    "PRESSURE bar": 166,
+    "Saturation Temperature K": 624,
+    "hf (J/g)": 1673,
+    "hfg (J/g)": 887,
+    "hg (J/g)": 2561
+  },
+  {
+    "PRESSURE bar": 167,
+    "Saturation Temperature K": 624,
+    "hf (J/g)": 1677,
+    "hfg (J/g)": 880,
+    "hg (J/g)": 2557
+  },
+  {
+    "PRESSURE bar": 168,
+    "Saturation Temperature K": 624,
+    "hf (J/g)": 1681,
+    "hfg (J/g)": 873,
+    "hg (J/g)": 2554
+  },
+  {
+    "PRESSURE bar": 169,
+    "Saturation Temperature K": 625,
+    "hf (J/g)": 1685,
+    "hfg (J/g)": 865,
+    "hg (J/g)": 2550
+  },
+  {
+    "PRESSURE bar": 170,
+    "Saturation Temperature K": 625,
+    "hf (J/g)": 1690,
+    "hfg (J/g)": 857,
+    "hg (J/g)": 2547
+  },
+  {
+    "PRESSURE bar": 171,
+    "Saturation Temperature K": 626,
+    "hf (J/g)": 1694,
+    "hfg (J/g)": 850,
+    "hg (J/g)": 2543
+  },
+  {
+    "PRESSURE bar": 172,
+    "Saturation Temperature K": 626,
+    "hf (J/g)": 1698,
+    "hfg (J/g)": 842,
+    "hg (J/g)": 2540
+  },
+  {
+    "PRESSURE bar": 173,
+    "Saturation Temperature K": 627,
+    "hf (J/g)": 1702,
+    "hfg (J/g)": 834,
+    "hg (J/g)": 2536
+  },
+  {
+    "PRESSURE bar": 174,
+    "Saturation Temperature K": 627,
+    "hf (J/g)": 1706,
+    "hfg (J/g)": 826,
+    "hg (J/g)": 2532
+  },
+  {
+    "PRESSURE bar": 175,
+    "Saturation Temperature K": 628,
+    "hf (J/g)": 1710,
+    "hfg (J/g)": 818,
+    "hg (J/g)": 2529
+  },
+  {
+    "PRESSURE bar": 176,
+    "Saturation Temperature K": 628,
+    "hf (J/g)": 1715,
+    "hfg (J/g)": 810,
+    "hg (J/g)": 2525
+  },
+  {
+    "PRESSURE bar": 177,
+    "Saturation Temperature K": 629,
+    "hf (J/g)": 1719,
+    "hfg (J/g)": 802,
+    "hg (J/g)": 2521
+  },
+  {
+    "PRESSURE bar": 178,
+    "Saturation Temperature K": 629,
+    "hf (J/g)": 1723,
+    "hfg (J/g)": 794,
+    "hg (J/g)": 2517
+  },
+  {
+    "PRESSURE bar": 179,
+    "Saturation Temperature K": 630,
+    "hf (J/g)": 1727,
+    "hfg (J/g)": 786,
+    "hg (J/g)": 2513
+  },
+  {
+    "PRESSURE bar": 180,
+    "Saturation Temperature K": 630,
+    "hf (J/g)": 1732,
+    "hfg (J/g)": 778,
+    "hg (J/g)": 2509
+  },
+  {
+    "PRESSURE bar": 181,
+    "Saturation Temperature K": 631,
+    "hf (J/g)": 1736,
+    "hfg (J/g)": 769,
+    "hg (J/g)": 2505
+  },
+  {
+    "PRESSURE bar": 182,
+    "Saturation Temperature K": 631,
+    "hf (J/g)": 1740,
+    "hfg (J/g)": 761,
+    "hg (J/g)": 2501
+  },
+  {
+    "PRESSURE bar": 183,
+    "Saturation Temperature K": 632,
+    "hf (J/g)": 1745,
+    "hfg (J/g)": 752,
+    "hg (J/g)": 2497
+  },
+  {
+    "PRESSURE bar": 184,
+    "Saturation Temperature K": 632,
+    "hf (J/g)": 1749,
+    "hfg (J/g)": 743,
+    "hg (J/g)": 2493
+  },
+  {
+    "PRESSURE bar": 185,
+    "Saturation Temperature K": 632,
+    "hf (J/g)": 1754,
+    "hfg (J/g)": 735,
+    "hg (J/g)": 2488
+  },
+  {
+    "PRESSURE bar": 186,
+    "Saturation Temperature K": 633,
+    "hf (J/g)": 1758,
+    "hfg (J/g)": 726,
+    "hg (J/g)": 2484
+  },
+  {
+    "PRESSURE bar": 187,
+    "Saturation Temperature K": 633,
+    "hf (J/g)": 1763,
+    "hfg (J/g)": 717,
+    "hg (J/g)": 2479
+  },
+  {
+    "PRESSURE bar": 188,
+    "Saturation Temperature K": 634,
+    "hf (J/g)": 1767,
+    "hfg (J/g)": 707,
+    "hg (J/g)": 2475
+  },
+  {
+    "PRESSURE bar": 189,
+    "Saturation Temperature K": 634,
+    "hf (J/g)": 1772,
+    "hfg (J/g)": 698,
+    "hg (J/g)": 2470
+  },
+  {
+    "PRESSURE bar": 190,
+    "Saturation Temperature K": 635,
+    "hf (J/g)": 1777,
+    "hfg (J/g)": 689,
+    "hg (J/g)": 2465
+  },
+  {
+    "PRESSURE bar": 191,
+    "Saturation Temperature K": 635,
+    "hf (J/g)": 1781,
+    "hfg (J/g)": 679,
+    "hg (J/g)": 2461
+  },
+  {
+    "PRESSURE bar": 192,
+    "Saturation Temperature K": 636,
+    "hf (J/g)": 1786,
+    "hfg (J/g)": 669,
+    "hg (J/g)": 2456
+  },
+  {
+    "PRESSURE bar": 193,
+    "Saturation Temperature K": 636,
+    "hf (J/g)": 1791,
+    "hfg (J/g)": 660,
+    "hg (J/g)": 2451
+  },
+  {
+    "PRESSURE bar": 194,
+    "Saturation Temperature K": 636,
+    "hf (J/g)": 1796,
+    "hfg (J/g)": 649,
+    "hg (J/g)": 2445
+  },
+  {
+    "PRESSURE bar": 195,
+    "Saturation Temperature K": 637,
+    "hf (J/g)": 1801,
+    "hfg (J/g)": 639,
+    "hg (J/g)": 2440
+  },
+  {
+    "PRESSURE bar": 196,
+    "Saturation Temperature K": 637,
+    "hf (J/g)": 1806,
+    "hfg (J/g)": 629,
+    "hg (J/g)": 2435
+  },
+  {
+    "PRESSURE bar": 197,
+    "Saturation Temperature K": 638,
+    "hf (J/g)": 1811,
+    "hfg (J/g)": 618,
+    "hg (J/g)": 2429
+  },
+  {
+    "PRESSURE bar": 198,
+    "Saturation Temperature K": 638,
+    "hf (J/g)": 1816,
+    "hfg (J/g)": 607,
+    "hg (J/g)": 2424
+  },
+  {
+    "PRESSURE bar": 199,
+    "Saturation Temperature K": 638,
+    "hf (J/g)": 1821,
+    "hfg (J/g)": 596,
+    "hg (J/g)": 2418
+  },
+  {
+    "PRESSURE bar": 200,
+    "Saturation Temperature K": 639,
+    "hf (J/g)": 1827,
+    "hfg (J/g)": 585,
+    "hg (J/g)": 2412
+  },
+  {
+    "PRESSURE bar": 201,
+    "Saturation Temperature K": 639,
+    "hf (J/g)": 1832,
+    "hfg (J/g)": 573,
+    "hg (J/g)": 2406
+  },
+  {
+    "PRESSURE bar": 202,
+    "Saturation Temperature K": 640,
+    "hf (J/g)": 1838,
+    "hfg (J/g)": 561,
+    "hg (J/g)": 2399
+  },
+  {
+    "PRESSURE bar": 203,
+    "Saturation Temperature K": 640,
+    "hf (J/g)": 1843,
+    "hfg (J/g)": 549,
+    "hg (J/g)": 2393
+  },
+  {
+    "PRESSURE bar": 204,
+    "Saturation Temperature K": 641,
+    "hf (J/g)": 1849,
+    "hfg (J/g)": 537,
+    "hg (J/g)": 2386
+  },
+  {
+    "PRESSURE bar": 205,
+    "Saturation Temperature K": 641,
+    "hf (J/g)": 1855,
+    "hfg (J/g)": 524,
+    "hg (J/g)": 2379
+  },
+  {
+    "PRESSURE bar": 206,
+    "Saturation Temperature K": 641,
+    "hf (J/g)": 1861,
+    "hfg (J/g)": 510,
+    "hg (J/g)": 2371
+  },
+  {
+    "PRESSURE bar": 207,
+    "Saturation Temperature K": 642,
+    "hf (J/g)": 1867,
+    "hfg (J/g)": 496,
+    "hg (J/g)": 2364
+  },
+  {
+    "PRESSURE bar": 208,
+    "Saturation Temperature K": 642,
+    "hf (J/g)": 1874,
+    "hfg (J/g)": 482,
+    "hg (J/g)": 2355
+  },
+  {
+    "PRESSURE bar": 209,
+    "Saturation Temperature K": 643,
+    "hf (J/g)": 1880,
+    "hfg (J/g)": 467,
+    "hg (J/g)": 2347
+  },
+  {
+    "PRESSURE bar": 210,
+    "Saturation Temperature K": 643,
+    "hf (J/g)": 1887,
+    "hfg (J/g)": 451,
+    "hg (J/g)": 2338
+  },
+  {
+    "PRESSURE bar": 211,
+    "Saturation Temperature K": 643,
+    "hf (J/g)": 1894,
+    "hfg (J/g)": 434,
+    "hg (J/g)": 2328
+  },
+  {
+    "PRESSURE bar": 212,
+    "Saturation Temperature K": 644,
+    "hf (J/g)": 1902,
+    "hfg (J/g)": 416,
+    "hg (J/g)": 2318
+  },
+  {
+    "PRESSURE bar": 213,
+    "Saturation Temperature K": 644,
+    "hf (J/g)": 1910,
+    "hfg (J/g)": 397,
+    "hg (J/g)": 2307
+  },
+  {
+    "PRESSURE bar": 214,
+    "Saturation Temperature K": 645,
+    "hf (J/g)": 1921,
+    "hfg (J/g)": 375,
+    "hg (J/g)": 2295
+  },
+  {
+    "PRESSURE bar": 215,
+    "Saturation Temperature K": 646,
+    "hf (J/g)": 1930,
+    "hfg (J/g)": 352,
+    "hg (J/g)": 2282
+  },
+  {
+    "PRESSURE bar": 216,
+    "Saturation Temperature K": 647,
+    "hf (J/g)": 1941,
+    "hfg (J/g)": 326,
+    "hg (J/g)": 2267
+  },
+  {
+    "PRESSURE bar": 217,
+    "Saturation Temperature K": 649,
+    "hf (J/g)": 1955,
+    "hfg (J/g)": 295,
+    "hg (J/g)": 2250
+  },
+  {
+    "PRESSURE bar": 218,
+    "Saturation Temperature K": 650,
+    "hf (J/g)": 1968,
+    "hfg (J/g)": 264,
+    "hg (J/g)": 2232
+  },
+  {
+    "PRESSURE bar": 219,
+    "Saturation Temperature K": 651,
+    "hf (J/g)": 2009,
+    "hfg (J/g)": 171,
+    "hg (J/g)": 2180
+  },
+  {
+    "PRESSURE bar": 220,
+    "Saturation Temperature K": 653,
+    "hf (J/g)": 2055,
+    "hfg (J/g)": 67,
+    "hg (J/g)": 2122
+  },
+  {
+    "PRESSURE bar": 221,
+    "Saturation Temperature K": 647,
+    "hf (J/g)": 2084,
+    "hfg (J/g)": 0,
+    "hg (J/g)": 2084
+  }
+]

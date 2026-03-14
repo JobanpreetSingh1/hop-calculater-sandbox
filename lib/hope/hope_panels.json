@@ -1,0 +1,11 @@
+[
+  { "panel": "Input", "panelorder": 1 },
+  { "panel": "Operating Envelope", "panelorder": 2 },
+  { "panel": "Compression", "panelorder": 3 },
+  { "panel": "Pressure & Force", "panelorder": 4 },
+  { "panel": "Temperature", "panelorder": 5 },
+  { "panel": "Heat", "panelorder": 6 },
+  { "panel": "Work", "panelorder": 7 },
+  { "panel": "Efficiency", "panelorder": 8 },
+  { "panel": "Performance", "panelorder": 9 }
+]
