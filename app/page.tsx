@@ -12,7 +12,7 @@ import {
   ResponsiveContainer,
   ReferenceLine,
   Sankey,
- 
+
 } from "recharts";
 
 type UiRole = "input" | "readonly" | "derived" | "hidden" | "hidden_value" | string;
@@ -319,27 +319,27 @@ function getRangeText(it: ItemSchema) {
 function getPanelHeaderColor(panelKey: string) {
   switch (panelKey) {
     case "Editable Inputs":
-      return "#eef4ff";
+      return "#0e5a7a";
     case "Reference Inputs":
-      return "#f3f4f6";
+      return "#0d5a4d";
     case "Compression":
-      return "#fff6e8";
+      return "#5a2d0d";
     case "Pressure & Force":
-      return "#fff1f0";
+      return "#6b1538";
     case "Temperature":
-      return "#fff4e5";
+      return "#5a2d0d";
     case "Heat":
-      return "#fff7f2";
+      return "#5a1d2e";
     case "Work":
-      return "#eef8f1";
+      return "#0d5a4d";
     case "Efficiency":
-      return "#eefaf2";
+      return "#0d5a4d";
     case "Performance":
-      return "#eef6fb";
+      return "#0e5a7a";
     case "Operating Envelope":
-      return "#f5f7fa";
+      return "#1a1a3a";
     default:
-      return "#f8f9fb";
+      return "#1e293b";
   }
 }
 
@@ -406,11 +406,11 @@ export default function Page() {
   const [keyMetricsOnly, setKeyMetricsOnly] = useState(false);
   const [selectedGraphMetric, setSelectedGraphMetric] = useState("T2_C");
   const [selectedSankeyModelId, setSelectedSankeyModelId] = useState<string>("");
-  
+
 
   const [panelOpen, setPanelOpen] = useState<Record<string, boolean>>({
     "Performance Graph": true,
-   
+
     "Editable Inputs": true,
     "Reference Inputs": false,
     Compression: true,
@@ -548,7 +548,7 @@ export default function Page() {
     }
   }, [models, selectedSankeyModelId]);
 
-  
+
 
   const panels = useMemo(() => {
     if (!schema) return [];
@@ -767,90 +767,90 @@ export default function Page() {
     return "";
   }
 
-function exportDisplayCsv() {
-  const csv = buildDisplayExportCsv(panels, models);
-  downloadTextFile("hope_display_compare.csv", csv, "text/csv;charset=utf-8");
-}
+  function exportDisplayCsv() {
+    const csv = buildDisplayExportCsv(panels, models);
+    downloadTextFile("hope_display_compare.csv", csv, "text/csv;charset=utf-8");
+  }
 
-async function downloadPanelPng(
-  ref: React.RefObject<HTMLDivElement | null>,
-  fileName: string
-) {
-  if (!ref.current) return;
+  async function downloadPanelPng(
+    ref: React.RefObject<HTMLDivElement | null>,
+    fileName: string
+  ) {
+    if (!ref.current) return;
 
-  const dataUrl = await toPng(ref.current, {
-    cacheBust: true,
-    pixelRatio: 2,
-    backgroundColor: "#ffffff",
-  });
-
-  const link = document.createElement("a");
-  link.download = fileName;
-  link.href = dataUrl;
-  link.click();
-}
-
-async function downloadExplorerPdf() {
-  const pdf = new jsPDF("p", "mm", "a4");
-  const pageWidth = pdf.internal.pageSize.getWidth();
-  const pageHeight = pdf.internal.pageSize.getHeight();
-
-  const sections = [
-    { ref: graphRef, title: "Performance Graph" },
-    { ref: ihrlRef, title: "IHRL Cooling Recovery Flow" },
-    { ref: netEnergyRef, title: "Net Energy Partition" },
-  ];
-
-  let first = true;
-
-  for (const section of sections) {
-    if (!section.ref.current) continue;
-
-    const dataUrl = await toPng(section.ref.current, {
+    const dataUrl = await toPng(ref.current, {
       cacheBust: true,
       pixelRatio: 2,
       backgroundColor: "#ffffff",
     });
 
-    const img = new Image();
-    img.src = dataUrl;
-
-    await new Promise<void>((resolve) => {
-      img.onload = () => resolve();
-    });
-
-    const imgWidth = img.width;
-    const imgHeight = img.height;
-
-    const usableWidth = pageWidth - 20;
-    const usableHeight = pageHeight - 20;
-
-    const scale = Math.min(usableWidth / imgWidth, usableHeight / imgHeight);
-    const renderWidth = imgWidth * scale;
-    const renderHeight = imgHeight * scale;
-
-    if (!first) pdf.addPage();
-
-    pdf.setFontSize(12);
-    pdf.text(section.title, 10, 10);
-    pdf.addImage(dataUrl, "PNG", 10, 15, renderWidth, renderHeight);
-
-    first = false;
+    const link = document.createElement("a");
+    link.download = fileName;
+    link.href = dataUrl;
+    link.click();
   }
 
-  pdf.save("hope_explorer_report.pdf");
-}
+  async function downloadExplorerPdf() {
+    const pdf = new jsPDF("p", "mm", "a4");
+    const pageWidth = pdf.internal.pageSize.getWidth();
+    const pageHeight = pdf.internal.pageSize.getHeight();
 
-function togglePanel(panelKey: string) {
-  setPanelOpen((prev) => ({
-    ...prev,
-    [panelKey]: !(prev[panelKey] ?? true),
-  }));
-}
+    const sections = [
+      { ref: graphRef, title: "Performance Graph" },
+      { ref: ihrlRef, title: "IHRL Cooling Recovery Flow" },
+      { ref: netEnergyRef, title: "Net Energy Partition" },
+    ];
+
+    let first = true;
+
+    for (const section of sections) {
+      if (!section.ref.current) continue;
+
+      const dataUrl = await toPng(section.ref.current, {
+        cacheBust: true,
+        pixelRatio: 2,
+        backgroundColor: "#ffffff",
+      });
+
+      const img = new Image();
+      img.src = dataUrl;
+
+      await new Promise<void>((resolve) => {
+        img.onload = () => resolve();
+      });
+
+      const imgWidth = img.width;
+      const imgHeight = img.height;
+
+      const usableWidth = pageWidth - 20;
+      const usableHeight = pageHeight - 20;
+
+      const scale = Math.min(usableWidth / imgWidth, usableHeight / imgHeight);
+      const renderWidth = imgWidth * scale;
+      const renderHeight = imgHeight * scale;
+
+      if (!first) pdf.addPage();
+
+      pdf.setFontSize(12);
+      pdf.text(section.title, 10, 10);
+      pdf.addImage(dataUrl, "PNG", 10, 15, renderWidth, renderHeight);
+
+      first = false;
+    }
+
+    pdf.save("hope_explorer_report.pdf");
+  }
+
+  function togglePanel(panelKey: string) {
+    setPanelOpen((prev) => ({
+      ...prev,
+      [panelKey]: !(prev[panelKey] ?? true),
+    }));
+  }
 
   if (loadingSchema && !schema) {
     return (
-      <main style={{ padding: 20, fontFamily: "system-ui, Arial" }}>
+      <main style={{ padding: 20, fontFamily: "system-ui, Arial", color: "#f1f5f9", backgroundColor: "#0f172a" }}>
         <h1>HOPE Hybrid Cycle Explorer</h1>
         <p>Loading schema…</p>
       </main>
@@ -864,6 +864,9 @@ function togglePanel(panelKey: string) {
         fontFamily: "system-ui, Arial",
         maxWidth: 1600,
         margin: "0 auto",
+        color: "#f1f5f9",
+        backgroundColor: "#0f172a",
+        minHeight: "100vh",
       }}
     >
       <div
@@ -877,8 +880,8 @@ function togglePanel(panelKey: string) {
         }}
       >
         <div>
-          <h1 style={{ margin: 0 }}>HOPE Hybrid Cycle Explorer</h1>
-          <div style={{ fontSize: 13, opacity: 0.7, marginTop: 4 }}>
+          <h1 style={{ margin: 0, color: "#f1f5f9" }}>HOPE Hybrid Cycle Explorer</h1>
+          <div style={{ fontSize: 13, opacity: 0.7, marginTop: 4, color: "#94a3b8" }}>
             Hydro Oxy Palta Engine • Reference Model • FAQ + White Paper Backed
           </div>
         </div>
@@ -890,10 +893,12 @@ function togglePanel(panelKey: string) {
             style={{
               padding: "8px 14px",
               borderRadius: 10,
-              border: "1px solid #ccc",
-              background: keyMetricsOnly ? "#f3f4f6" : "#fff",
+              border: "1px solid #475569",
+              background: keyMetricsOnly ? "#38bdf8" : "#1e293b",
+              color: keyMetricsOnly ? "#0f172a" : "#f1f5f9",
               cursor: "pointer",
               fontWeight: keyMetricsOnly ? 700 : 400,
+              transition: "0.2s",
             }}
           >
             {keyMetricsOnly ? "Key Metrics" : "Key Metrics Only"}
@@ -906,10 +911,12 @@ function togglePanel(panelKey: string) {
             style={{
               padding: "8px 14px",
               borderRadius: 10,
-              border: "1px solid #ccc",
-              background: "#fff",
+              border: "1px solid #475569",
+              background: "#1e293b",
+              color: "#f1f5f9",
               cursor: "pointer",
               opacity: !schema || models.length >= MAX_MODELS ? 0.5 : 1,
+              transition: "0.2s",
             }}
           >
             + Add Model
@@ -922,10 +929,12 @@ function togglePanel(panelKey: string) {
             style={{
               padding: "8px 14px",
               borderRadius: 10,
-              border: "1px solid #ccc",
-              background: "#fff",
+              border: "1px solid #475569",
+              background: "#1e293b",
+              color: "#f1f5f9",
               cursor: "pointer",
               opacity: !schema ? 0.5 : 1,
+              transition: "0.2s",
             }}
           >
             Reset All
@@ -937,49 +946,55 @@ function togglePanel(panelKey: string) {
             style={{
               padding: "8px 14px",
               borderRadius: 10,
-              border: "1px solid #ccc",
-              background: "#fff",
+              border: "1px solid #475569",
+              background: "#1e293b",
+              color: "#f1f5f9",
               cursor: "pointer",
+              transition: "0.2s",
             }}
           >
             Export CSV
           </button>
           <button
-  type="button"
-  onClick={() => downloadPanelPng(graphRef, "hope_performance_graph.png")}
-  style={{
-    padding: "8px 14px",
-    borderRadius: 10,
-    border: "1px solid #ccc",
-    background: "#fff",
-    cursor: "pointer",
-  }}
->
-Download Graph PNG
-</button>
+            type="button"
+            onClick={() => downloadPanelPng(graphRef, "hope_performance_graph.png")}
+            style={{
+              padding: "8px 14px",
+              borderRadius: 10,
+              border: "1px solid #475569",
+              background: "#1e293b",
+              color: "#f1f5f9",
+              cursor: "pointer",
+              transition: "0.2s",
+            }}
+          >
+            Download Graph PNG
+          </button>
 
-<button
-  type="button"
-  onClick={downloadExplorerPdf}
-  style={{
-    padding: "8px 14px",
-    borderRadius: 10,
-    border: "1px solid #ccc",
-    background: "#fff",
-    cursor: "pointer",
-  }}
->
-Download PDF
-</button>
+          <button
+            type="button"
+            onClick={downloadExplorerPdf}
+            style={{
+              padding: "8px 14px",
+              borderRadius: 10,
+              border: "1px solid #475569",
+              background: "#1e293b",
+              color: "#f1f5f9",
+              cursor: "pointer",
+              transition: "0.2s",
+            }}
+          >
+            Download PDF
+          </button>
 
-          <div style={{ fontSize: 12, opacity: 0.8 }}>
+          <div style={{ fontSize: 12, opacity: 0.8, color: "#94a3b8" }}>
             {loadingCompute ? "Computing…" : "Ready"}
           </div>
         </div>
       </div>
 
       {err ? (
-        <div style={{ marginBottom: 12, padding: 10, border: "1px solid #f3b", borderRadius: 8 }}>
+        <div style={{ marginBottom: 12, padding: 10, border: "1px solid #dc2626", borderRadius: 8, backgroundColor: "#7f1d1d", color: "#fca5a5" }}>
           <b>Error:</b> {err}
         </div>
       ) : null}
@@ -987,9 +1002,9 @@ Download PDF
       {models.length > 0 ? (
         <section
           style={{
-            border: "1px solid #ddd",
+            border: "1px solid #334155",
             borderRadius: 14,
-            background: "#fff",
+            background: "#1e293b",
             overflowX: "auto",
             marginBottom: 18,
           }}
@@ -1004,13 +1019,14 @@ Download PDF
             <div
               style={{
                 padding: "12px 14px",
-                borderBottom: "1px solid #eee",
-                background: "#f6f7f9",
+                borderBottom: "1px solid #334155",
+                background: "#0f172a",
                 fontWeight: 700,
                 position: "sticky",
                 left: 0,
                 zIndex: 3,
-                boxShadow: "2px 0 0 #eee",
+                boxShadow: "2px 0 0 #334155",
+                color: "#38bdf8",
               }}
             >
               Models
@@ -1021,12 +1037,13 @@ Download PDF
                 key={model.id}
                 style={{
                   padding: "12px 14px",
-                  borderBottom: "1px solid #eee",
-                  background: "#fafafa",
+                  borderBottom: "1px solid #334155",
+                  background: "#0f172a",
                   textAlign: "center",
                   fontWeight: 700,
                   fontSize: 15,
-                  borderLeft: "1px solid #f0f0f0",
+                  borderLeft: "1px solid #475569",
+                  color: "#f1f5f9",
                 }}
               >
                 {model.name}
@@ -1047,9 +1064,9 @@ Download PDF
               <section
                 key={panel.panel_key}
                 style={{
-                  border: "1px solid #ddd",
+                  border: "1px solid #334155",
                   borderRadius: 14,
-                  background: "#fff",
+                  background: "#1e293b",
                   overflowX: "auto",
                 }}
               >
@@ -1066,9 +1083,17 @@ Download PDF
                     background: getPanelHeaderColor(panel.panel_key),
                     cursor: "pointer",
                     textAlign: "left",
-                    borderBottom: "1px solid #e5e7eb",
+                    borderBottom: "1px solid #334155",
                     fontWeight: 700,
                     letterSpacing: "0.02em",
+                    color: "#0f172a",
+                    transition: "0.2s",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.opacity = "0.9";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.opacity = "1";
                   }}
                 >
                   <span style={{ fontSize: 18, fontWeight: 700 }}>
@@ -1085,14 +1110,15 @@ Download PDF
                           style={{
                             textAlign: "left",
                             padding: "10px 12px",
-                            borderTop: "1px solid #eee",
-                            borderBottom: "1px solid #eee",
+                            borderTop: "1px solid #334155",
+                            borderBottom: "1px solid #334155",
                             background: getPanelHeaderColor(panel.panel_key),
                             position: "sticky",
                             left: 0,
                             zIndex: 3,
                             minWidth: 260,
-                            boxShadow: "2px 0 0 #eee",
+                            boxShadow: "2px 0 0 #334155",
+                            color: "#0f172a",
                           }}
                         >
                           Metric
@@ -1103,11 +1129,12 @@ Download PDF
                             key={model.id}
                             style={{
                               padding: "10px 12px",
-                              borderTop: "1px solid #eee",
-                              borderBottom: "1px solid #eee",
+                              borderTop: "1px solid #334155",
+                              borderBottom: "1px solid #334155",
                               background: getPanelHeaderColor(panel.panel_key),
                               minWidth: 180,
-                              borderLeft: "1px solid #f0f0f0",
+                              borderLeft: "1px solid #475569",
+                              color: "#0f172a",
                             }}
                           />
                         ))}
@@ -1123,20 +1150,21 @@ Download PDF
                           <tr
                             key={`${panel.panel_key}-${it.metric_key}`}
                             style={{
-                              background: rowIndex % 2 === 0 ? "#ffffff" : "#fafafa",
+                              background: rowIndex % 2 === 0 ? "#1e293b" : "#0f172a",
                             }}
                           >
                             <td
                               style={{
                                 padding: "10px 12px",
-                                borderBottom: "1px solid #f0f0f0",
+                                borderBottom: "1px solid #334155",
                                 verticalAlign: "top",
-                                background: rowIndex % 2 === 0 ? "#ffffff" : "#fafafa",
+                                background: rowIndex % 2 === 0 ? "#1e293b" : "#0f172a",
                                 position: "sticky",
                                 left: 0,
                                 zIndex: 2,
                                 minWidth: 260,
-                                boxShadow: "2px 0 0 #eee",
+                                boxShadow: "2px 0 0 #334155",
+                                color: "#f1f5f9",
                               }}
                             >
                               <div style={{ fontWeight: 600 }}>{it.label}</div>
@@ -1147,6 +1175,7 @@ Download PDF
                                     fontSize: 12,
                                     opacity: 0.65,
                                     marginTop: 4,
+                                    color: "#94a3b8",
                                   }}
                                 >
                                   {getRangeText(it)}
@@ -1163,17 +1192,22 @@ Download PDF
                                   key={`${model.id}-${it.metric_key}`}
                                   style={{
                                     padding: "10px 12px",
-                                    borderBottom: "1px solid #f0f0f0",
+                                    borderBottom: "1px solid #334155",
                                     textAlign: "right",
                                     verticalAlign: "middle",
-                                    borderLeft: "1px solid #f5f5f5",
+                                    borderLeft: "1px solid #475569",
+                                    color: "#f1f5f9",
                                   }}
                                 >
                                   {isEditable(it) ? (
                                     <input
                                       value={model.inputs[it.metric_key] ?? ""}
                                       onChange={(e) => onChange(model.id, it, e.target.value)}
-                                      onBlur={() => onBlurValue(model.id, it)}
+                                      onBlur={(e) => {
+                                        onBlurValue(model.id, it);
+                                        e.currentTarget.style.borderColor = "#475569";
+                                        e.currentTarget.style.boxShadow = "none";
+                                      }}
                                       onKeyDown={(e) => {
                                         if (e.key === "Enter") {
                                           e.preventDefault();
@@ -1185,18 +1219,24 @@ Download PDF
                                         width: "100%",
                                         minWidth: 120,
                                         padding: "8px 10px",
-                                        borderRadius: 10,
-                                        border: "1px solid #ccc",
+                                        borderRadius: 6,
+                                        border: "1px solid #475569",
                                         fontSize: 14,
                                         textAlign: "right",
-                                        background: "#fff",
+                                        background: "#0f172a",
+                                        color: "#f1f5f9",
+                                        transition: "0.2s",
                                       }}
                                       inputMode={
                                         normalizeDType(it.dtype) === "number" ||
-                                        normalizeDType(it.dtype) === "percent"
+                                          normalizeDType(it.dtype) === "percent"
                                           ? "decimal"
                                           : "text"
                                       }
+                                      onFocus={(e) => {
+                                        e.currentTarget.style.borderColor = "#38bdf8";
+                                        e.currentTarget.style.boxShadow = "0 0 0 2px rgba(56, 189, 248, 0.1)";
+                                      }}
                                     />
                                   ) : (
                                     <div
@@ -1204,12 +1244,13 @@ Download PDF
                                         display: "inline-block",
                                         minWidth: 120,
                                         padding: "8px 10px",
-                                        borderRadius: 10,
-                                        border: "1px solid #eee",
-                                        background: "#fff",
+                                        borderRadius: 6,
+                                        border: "1px solid #475569",
+                                        background: "#0f172a",
                                         fontVariantNumeric: "tabular-nums",
                                         fontFeatureSettings: '"tnum"',
                                         textAlign: "right",
+                                        color: "#f1f5f9",
                                       }}
                                     >
                                       {masked ? "••••" : display}
@@ -1230,9 +1271,9 @@ Download PDF
 
           <section
             style={{
-              border: "1px solid #ddd",
+              border: "1px solid #334155",
               borderRadius: 14,
-              background: "#fff",
+              background: "#1e293b",
               overflow: "hidden",
             }}
           >
@@ -1246,12 +1287,20 @@ Download PDF
                 alignItems: "center",
                 padding: "14px 16px",
                 border: "none",
-                background: "#eef6fb",
+                background: "#0e5a7a",
                 cursor: "pointer",
                 textAlign: "left",
-                borderBottom: "1px solid #e5e7eb",
+                borderBottom: "1px solid #334155",
                 fontWeight: 700,
                 letterSpacing: "0.02em",
+                color: "#f1f5f9",
+                transition: "0.2s",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = "#0d4f6b";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "#0e5a7a";
               }}
             >
               <span style={{ fontSize: 18, fontWeight: 700 }}>
@@ -1263,7 +1312,7 @@ Download PDF
             </button>
 
             {(panelOpen["Performance Graph"] ?? true) ? (
-              <div ref={graphRef} style={{ padding: 16, background: "#fff" }}>
+              <div ref={graphRef} style={{ padding: 16, background: "#1e293b" }}>
                 <div
                   style={{
                     marginBottom: 14,
@@ -1275,7 +1324,7 @@ Download PDF
                   }}
                 >
                   <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
-                    <label style={{ fontSize: 13, fontWeight: 600 }}>
+                    <label style={{ fontSize: 13, fontWeight: 600, color: "#f1f5f9" }}>
                       Graph Metric:
                     </label>
 
@@ -1284,9 +1333,11 @@ Download PDF
                       onChange={(e) => setSelectedGraphMetric(e.target.value)}
                       style={{
                         padding: "8px 10px",
-                        borderRadius: 8,
-                        border: "1px solid #ccc",
-                        background: "#fff",
+                        borderRadius: 6,
+                        border: "1px solid #475569",
+                        background: "#0f172a",
+                        color: "#f1f5f9",
+                        cursor: "pointer",
                       }}
                     >
                       {GRAPH_METRIC_OPTIONS.map((opt) => (
@@ -1297,7 +1348,7 @@ Download PDF
                     </select>
                   </div>
 
-                  <div style={{ fontSize: 14, fontWeight: 700, opacity: 0.8 }}>
+                  <div style={{ fontSize: 14, fontWeight: 700, opacity: 0.8, color: "#38bdf8" }}>
                     {GRAPH_METRIC_OPTIONS.find((x) => x.key === selectedGraphMetric)?.label}
                   </div>
                 </div>
@@ -1305,29 +1356,38 @@ Download PDF
                 <div style={{ width: "100%", height: 340 }}>
                   <ResponsiveContainer width="100%" height="100%">
                     <LineChart data={graphData} margin={{ top: 10, right: 20, left: 10, bottom: 10 }}>
-                      <CartesianGrid strokeDasharray="3 3" stroke="#e6e6e6" />
+                      <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
                       {selectedGraphMetric === "T2_C" ? (
                         <ReferenceLine
                           y={430}
-                          stroke="orange"
+                          stroke="#f97316"
                           strokeDasharray="4 4"
-                          label="Knock Limit (~700K)"
+                          label={{ value: "Knock Limit (~700K)", fill: "#f97316", position: "right" }}
                         />
                       ) : null}
-                      <XAxis dataKey="CR" />
-                      <YAxis />
+                      <XAxis dataKey="CR" stroke="#94a3b8" />
+                      <YAxis stroke="#94a3b8" />
                       <Tooltip
+                        contentStyle={{
+                          backgroundColor: "#0f172a",
+                          border: "1px solid #334155",
+                          borderRadius: "8px",
+                          color: "#f1f5f9",
+                        }}
+                        cursor={{ stroke: "#334155" }}
                         formatter={(value: any) => {
                           const num = Number(value);
-                          return [formatGraphValue(selectedGraphMetric, num), ""];
+                          return [formatGraphValue(selectedGraphMetric, num), "Value"];
                         }}
                       />
                       <Line
                         type="monotone"
                         dataKey="value"
+                        stroke="#38bdf8"
                         strokeWidth={2.5}
-                        dot={{ r: 4 }}
-                        activeDot={{ r: 6 }}
+                        dot={{ r: 4, fill: "#38bdf8" }}
+                        activeDot={{ r: 6, fill: "#38bdf8" }}
+                        isAnimationActive={true}
                       />
                     </LineChart>
                   </ResponsiveContainer>
@@ -1336,12 +1396,12 @@ Download PDF
             ) : null}
           </section>
 
-                   
+
           <section
             style={{
-              border: "1px solid #ddd",
+              border: "1px solid #334155",
               borderRadius: 14,
-              background: "#fff",
+              background: "#1e293b",
               overflow: "hidden",
             }}
           >
@@ -1355,12 +1415,20 @@ Download PDF
                 alignItems: "center",
                 padding: "14px 16px",
                 border: "none",
-                background: "#f5f7fa",
+                background: "#0d5a4d",
                 cursor: "pointer",
                 textAlign: "left",
-                borderBottom: "1px solid #e5e7eb",
+                borderBottom: "1px solid #334155",
                 fontWeight: 700,
                 letterSpacing: "0.02em",
+                color: "#f1f5f9",
+                transition: "0.2s",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = "#0a4a3d";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "#0d5a4d";
               }}
             >
               <span style={{ fontSize: 18, fontWeight: 700 }}>
@@ -1371,8 +1439,8 @@ Download PDF
               </span>
             </button>
 
-           {(panelOpen["IHRL Cooling Recovery Flow"] ?? true) ? (
-             <div ref={ihrlRef} style={{ padding: 16, background: "#fff" }}>
+            {(panelOpen["IHRL Cooling Recovery Flow"] ?? true) ? (
+              <div ref={ihrlRef} style={{ padding: 16, background: "#1e293b" }}>
                 <div
                   style={{
                     marginBottom: 14,
@@ -1384,7 +1452,7 @@ Download PDF
                   }}
                 >
                   <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
-                    <label style={{ fontSize: 13, fontWeight: 600 }}>
+                    <label style={{ fontSize: 13, fontWeight: 600, color: "#f1f5f9" }}>
                       Model:
                     </label>
 
@@ -1393,9 +1461,11 @@ Download PDF
                       onChange={(e) => setSelectedSankeyModelId(e.target.value)}
                       style={{
                         padding: "8px 10px",
-                        borderRadius: 8,
-                        border: "1px solid #ccc",
-                        background: "#fff",
+                        borderRadius: 6,
+                        border: "1px solid #475569",
+                        background: "#0f172a",
+                        color: "#f1f5f9",
+                        cursor: "pointer",
                       }}
                     >
                       {models.map((model) => (
@@ -1406,7 +1476,7 @@ Download PDF
                     </select>
                   </div>
 
-                  <div style={{ fontSize: 14, fontWeight: 700, opacity: 0.8 }}>
+                  <div style={{ fontSize: 14, fontWeight: 700, opacity: 0.8, color: "#22c55e" }}>
                     {sankeyModel?.name ?? ""}
                   </div>
                 </div>
@@ -1421,8 +1491,8 @@ Download PDF
                           nodeWidth={20}
                           margin={{ top: 10, right: 120, bottom: 10, left: 120 }}
                           linkCurvature={0.35}
-                          node={{ stroke: "#333", strokeWidth: 1 }}
-                          link={{ stroke: "#888" }}
+                          node={{ stroke: "#f1f5f9", strokeWidth: 2, fill: "#38bdf8" }}
+                          link={{ stroke: "#475569", strokeOpacity: 0.5 }}
                         />
                       </ResponsiveContainer>
                     </div>
@@ -1435,19 +1505,19 @@ Download PDF
                         gap: 10,
                       }}
                     >
-                      <div style={{ padding: "10px 12px", border: "1px solid #eee", borderRadius: 10 }}>
-                        <div style={{ fontSize: 12, opacity: 0.7 }}>Cooling Gross</div>
-                        <div style={{ fontWeight: 700 }}>{ihrlSankeyData.summary.coolGross.toFixed(0)} J</div>
+                      <div style={{ padding: "10px 12px", border: "1px solid #475569", borderRadius: 10, background: "#0f172a" }}>
+                        <div style={{ fontSize: 12, opacity: 0.7, color: "#94a3b8" }}>Cooling Gross</div>
+                        <div style={{ fontWeight: 700, color: "#f1f5f9" }}>{ihrlSankeyData.summary.coolGross.toFixed(0)} J</div>
                       </div>
-                      <div style={{ padding: "10px 12px", border: "1px solid #eee", borderRadius: 10 }}>
-                        <div style={{ fontSize: 12, opacity: 0.7 }}>IHRL Recovery</div>
-                        <div style={{ fontWeight: 700 }}>
+                      <div style={{ padding: "10px 12px", border: "1px solid #475569", borderRadius: 10, background: "#0f172a" }}>
+                        <div style={{ fontSize: 12, opacity: 0.7, color: "#94a3b8" }}>IHRL Recovery</div>
+                        <div style={{ fontWeight: 700, color: "#22c55e" }}>
                           {ihrlSankeyData.summary.ihrl.toFixed(0)} J ({ihrlSankeyData.summary.ihrlPct.toFixed(1)}%)
                         </div>
                       </div>
-                      <div style={{ padding: "10px 12px", border: "1px solid #eee", borderRadius: 10 }}>
-                        <div style={{ fontSize: 12, opacity: 0.7 }}>Cooling Net Loss</div>
-                        <div style={{ fontWeight: 700 }}>
+                      <div style={{ padding: "10px 12px", border: "1px solid #475569", borderRadius: 10, background: "#0f172a" }}>
+                        <div style={{ fontSize: 12, opacity: 0.7, color: "#94a3b8" }}>Cooling Net Loss</div>
+                        <div style={{ fontWeight: 700, color: "#f1f5f9" }}>
                           {ihrlSankeyData.summary.coolNet.toFixed(0)} J ({ihrlSankeyData.summary.coolNetPct.toFixed(1)}%)
                         </div>
                       </div>
@@ -1460,9 +1530,9 @@ Download PDF
 
           <section
             style={{
-              border: "1px solid #ddd",
+              border: "1px solid #334155",
               borderRadius: 14,
-              background: "#fff",
+              background: "#1e293b",
               overflow: "hidden",
             }}
           >
@@ -1476,12 +1546,20 @@ Download PDF
                 alignItems: "center",
                 padding: "14px 16px",
                 border: "none",
-                background: "#f5f7fa",
+                background: "#5a2d0d",
                 cursor: "pointer",
                 textAlign: "left",
-                borderBottom: "1px solid #e5e7eb",
+                borderBottom: "1px solid #334155",
                 fontWeight: 700,
                 letterSpacing: "0.02em",
+                color: "#f1f5f9",
+                transition: "0.2s",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = "#6b380f";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "#5a2d0d";
               }}
             >
               <span style={{ fontSize: 18, fontWeight: 700 }}>
@@ -1493,7 +1571,7 @@ Download PDF
             </button>
 
             {(panelOpen["Sankey Energy Flow"] ?? true) ? (
-             <div ref={netEnergyRef} style={{ padding: 16, background: "#fff" }}>
+              <div ref={netEnergyRef} style={{ padding: 16, background: "#1e293b" }}>
                 <div
                   style={{
                     marginBottom: 14,
@@ -1505,7 +1583,7 @@ Download PDF
                   }}
                 >
                   <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
-                    <label style={{ fontSize: 13, fontWeight: 600 }}>
+                    <label style={{ fontSize: 13, fontWeight: 600, color: "#f1f5f9" }}>
                       Model:
                     </label>
 
@@ -1514,9 +1592,11 @@ Download PDF
                       onChange={(e) => setSelectedSankeyModelId(e.target.value)}
                       style={{
                         padding: "8px 10px",
-                        borderRadius: 8,
-                        border: "1px solid #ccc",
-                        background: "#fff",
+                        borderRadius: 6,
+                        border: "1px solid #475569",
+                        background: "#0f172a",
+                        color: "#f1f5f9",
+                        cursor: "pointer",
                       }}
                     >
                       {models.map((model) => (
@@ -1527,7 +1607,7 @@ Download PDF
                     </select>
                   </div>
 
-                  <div style={{ fontSize: 14, fontWeight: 700, opacity: 0.8 }}>
+                  <div style={{ fontSize: 14, fontWeight: 700, opacity: 0.8, color: "#f97316" }}>
                     {sankeyModel?.name ?? ""}
                   </div>
                 </div>
@@ -1542,8 +1622,8 @@ Download PDF
                           nodeWidth={20}
                           margin={{ top: 10, right: 120, bottom: 10, left: 120 }}
                           linkCurvature={0.35}
-                          node={{ stroke: "#333", strokeWidth: 1 }}
-                          link={{ stroke: "#888" }}
+                          node={{ stroke: "#f1f5f9", strokeWidth: 2, fill: "#38bdf8" }}
+                          link={{ stroke: "#475569", strokeOpacity: 0.5 }}
                         />
                       </ResponsiveContainer>
                     </div>
@@ -1556,29 +1636,29 @@ Download PDF
                         gap: 10,
                       }}
                     >
-                      <div style={{ padding: "10px 12px", border: "1px solid #eee", borderRadius: 10 }}>
-                        <div style={{ fontSize: 12, opacity: 0.7 }}>Fuel Input</div>
-                        <div style={{ fontWeight: 700 }}>{sankeyData.summary.qIn.toFixed(0)} J</div>
+                      <div style={{ padding: "10px 12px", border: "1px solid #475569", borderRadius: 10, background: "#0f172a" }}>
+                        <div style={{ fontSize: 12, opacity: 0.7, color: "#94a3b8" }}>Fuel Input</div>
+                        <div style={{ fontWeight: 700, color: "#f97316" }}>{sankeyData.summary.qIn.toFixed(0)} J</div>
                       </div>
-                      <div style={{ padding: "10px 12px", border: "1px solid #eee", borderRadius: 10 }}>
-                        <div style={{ fontSize: 12, opacity: 0.7 }}>Brake Work</div>
-                        <div style={{ fontWeight: 700 }}>{sankeyData.summary.brakePct.toFixed(1)}%</div>
+                      <div style={{ padding: "10px 12px", border: "1px solid #475569", borderRadius: 10, background: "#0f172a" }}>
+                        <div style={{ fontSize: 12, opacity: 0.7, color: "#94a3b8" }}>Brake Work</div>
+                        <div style={{ fontWeight: 700, color: "#22c55e" }}>{sankeyData.summary.brakePct.toFixed(1)}%</div>
                       </div>
-                      <div style={{ padding: "10px 12px", border: "1px solid #eee", borderRadius: 10 }}>
-                        <div style={{ fontSize: 12, opacity: 0.7 }}>Exhaust</div>
-                        <div style={{ fontWeight: 700 }}>{sankeyData.summary.exhaustPct.toFixed(1)}%</div>
+                      <div style={{ padding: "10px 12px", border: "1px solid #475569", borderRadius: 10, background: "#0f172a" }}>
+                        <div style={{ fontSize: 12, opacity: 0.7, color: "#94a3b8" }}>Exhaust</div>
+                        <div style={{ fontWeight: 700, color: "#f1f5f9" }}>{sankeyData.summary.exhaustPct.toFixed(1)}%</div>
                       </div>
-                      <div style={{ padding: "10px 12px", border: "1px solid #eee", borderRadius: 10 }}>
-                        <div style={{ fontSize: 12, opacity: 0.7 }}>Cooling Net</div>
-                        <div style={{ fontWeight: 700 }}>{sankeyData.summary.coolNetPct.toFixed(1)}%</div>
+                      <div style={{ padding: "10px 12px", border: "1px solid #475569", borderRadius: 10, background: "#0f172a" }}>
+                        <div style={{ fontSize: 12, opacity: 0.7, color: "#94a3b8" }}>Cooling Net</div>
+                        <div style={{ fontWeight: 700, color: "#f1f5f9" }}>{sankeyData.summary.coolNetPct.toFixed(1)}%</div>
                       </div>
-                      <div style={{ padding: "10px 12px", border: "1px solid #eee", borderRadius: 10 }}>
-                        <div style={{ fontSize: 12, opacity: 0.7 }}>Friction</div>
-                        <div style={{ fontWeight: 700 }}>{sankeyData.summary.frictionPct.toFixed(1)}%</div>
+                      <div style={{ padding: "10px 12px", border: "1px solid #475569", borderRadius: 10, background: "#0f172a" }}>
+                        <div style={{ fontSize: 12, opacity: 0.7, color: "#94a3b8" }}>Friction</div>
+                        <div style={{ fontWeight: 700, color: "#f1f5f9" }}>{sankeyData.summary.frictionPct.toFixed(1)}%</div>
                       </div>
-                      <div style={{ padding: "10px 12px", border: "1px solid #eee", borderRadius: 10 }}>
-                        <div style={{ fontSize: 12, opacity: 0.7 }}>Unburned</div>
-                        <div style={{ fontWeight: 700 }}>{sankeyData.summary.unburnedPct.toFixed(1)}%</div>
+                      <div style={{ padding: "10px 12px", border: "1px solid #475569", borderRadius: 10, background: "#0f172a" }}>
+                        <div style={{ fontSize: 12, opacity: 0.7, color: "#94a3b8" }}>Unburned</div>
+                        <div style={{ fontWeight: 700, color: "#f1f5f9" }}>{sankeyData.summary.unburnedPct.toFixed(1)}%</div>
                       </div>
                     </div>
                   </>

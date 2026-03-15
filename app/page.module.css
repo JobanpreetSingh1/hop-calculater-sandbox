@@ -1,20 +1,21 @@
 .page {
-  --background: #fafafa;
-  --foreground: #fff;
+  --background: #0f172a;
+  --foreground: #1e293b;
+  --page-bg: #0f172a;
 
-  --text-primary: #000;
-  --text-secondary: #666;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
 
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-  --button-secondary-border: #ebebeb;
+  --button-primary-hover: #0e9ec4;
+  --button-secondary-hover: #1e293b;
+  --button-secondary-border: #475569;
 
   display: flex;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-geist-sans);
-  background-color: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--page-bg);
 }
 
 .main {
@@ -75,7 +76,7 @@
   align-items: center;
   height: 40px;
   padding: 0 16px;
-  border-radius: 128px;
+  border-radius: 8px;
   border: 1px solid transparent;
   transition: 0.2s;
   cursor: pointer;
@@ -84,25 +85,27 @@
 }
 
 a.primary {
-  background: var(--text-primary);
-  color: var(--background);
+  background: var(--button-primary-hover);
+  color: #ffffff;
   gap: 8px;
 }
 
 a.secondary {
   border-color: var(--button-secondary-border);
+  color: var(--text-primary);
+  background: transparent;
 }
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
-    background: var(--button-primary-hover);
+    background: #0dacc0;
     border-color: transparent;
   }
 
   a.secondary:hover {
     background: var(--button-secondary-hover);
-    border-color: transparent;
+    border-color: var(--button-secondary-border);
   }
 }
 
@@ -119,23 +122,5 @@ a.secondary {
     font-size: 32px;
     line-height: 40px;
     letter-spacing: -1.92px;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
-
-  .page {
-    --background: #000;
-    --foreground: #000;
-
-    --text-primary: #ededed;
-    --text-secondary: #999;
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-    --button-secondary-border: #1a1a1a;
   }
 }
